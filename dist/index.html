@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
-
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <title>Medsen</title>
 </head>
 <body>
-  <nav class="sticky top-0 z-10 left-0 w-full bg-gray-800 p-4 flex items-center justify-between">
+  <nav class="sticky top-0 z-30 left-0 w-full bg-gray-800 p-4 flex items-center justify-between">
     <span class="text-white bg-green-500 ml-4 p-1 ">MEDSEN</span>
     <ul class="flex mr-12  justify-end">
       <li class="mr-6">
@@ -16,26 +16,26 @@
         <a href="#section1" class="text-white">Accueil</a>
       </li>
       <li class="mr-6">
-        <a href="#section2" class="text-white">Nos Projets</a>
+        <a href="#section2" class="text-white">Notre Vision</a>
       </li>
       <li class="mr-6">
-        <a href="#section3" class="text-white ">Actualités</a>
+        <a href="#section3" class="text-white ">Nos projets</a>
       </li>
       <li class="mr-6">
-        <a href="#section4" class="text-white ">Nous Rejoindre</a>
+        <a href="#section4" class="text-white ">Actualités</a>
       </li>
       <li class="mr-6">
-        <a href="#section5" class="text-white ">À propos</a>
+        <a href="#section5" class="text-white ">Nous rejoindre</a>
       </li>
     </ul>
   </nav>
   <!-- Hero Section -->
   <section id="section1" class="relative h-screen bg-[url('../src/images/bg-drugs2.jpg')] bg-center bg-cover flex items-center ">
     <div class="flex cursor-pointer flex-col gap-3 ml-8 z-20">
-      <h1 class="text-4xl font-bold ">TROUVER VOTRE DOCTEUR, PRENEZ RENDEZ-VOUS</h1>
-      <h1 class=" text-xl">Près de chez vous, partout au Sénégal ! </h2>
+      <h1 class="text-4xl font-bold text-gray-900  ">TROUVER VOTRE DOCTEUR, PRENEZ RENDEZ-VOUS</h1>
+      <h1 class=" text-xl text-gray-900 ">Près de chez vous, partout au Sénégal ! </h2>
         
-        <a class="p-2 bg-green-600 flex justify-between text-white rounded-2xl shadow-xl w-[13rem] text-center hover:bg-transparent hover:text-green-600 hover:border-green-600 hover:border hover:scale-95 transition-all duration-200 items-center ">
+        <a class="p-2  bg-green-600 flex justify-between text-white rounded-xl shadow-xl w-[13rem] text-center hover:bg-transparent hover:text-green-600 hover:border-green-600 hover:border hover:scale-95 transition-all duration-200 items-center ">
           CONTACTER NOUS
           <img src="../src/images/whatsapp.ico" alt="WhatsApp" width="30" height="30">
         </a>
@@ -51,25 +51,61 @@
   </section>
   
   
+<!-- Qui sommes nous ? -->
+
+  <section id="section2" class=" bg-[#ffffff] flex flex-col items-center gap-12">
+    <h1 class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+      Qui sommes nous ?
+      <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
+    </h1>
+    <div class="flex flex-col items-center ">
+        <p class="text-3xl font-bold text-[#51a63d] animate-pulse">Medsen, une healthtech africaine</p>      
+        
+        <div class="flex justify-evenly gap-4 mt-4 items-center">
+          <p class="text-justify w-[80%] px-5 py-5 shadow-md  bg-gray-200 rounded text-xl">
+            Notre objectif principal est de mettre en place un système de santé connecté pour le Sénégal. Nous sommes une healthtech africaine qui propose une nouvelle façon d'accéder aux soins médicaux plus rapide, pratique et abordable. <br>
+            <span class="text-[#51a63d] font-semibold text-2xl">MedSen</span> propose une plateforme nationale e-santé qui regroupe les établissements sanitaires, la population et les partenaires de santé.
+          </p> 
+       
+
+        
+        </div>  
+        <div class="w-full py-10 px-10  items-center   grid grid-cols-3 gap-4">
+          <div class="rounded-xl shadow-xl bg-slate-100 border flex flex-col text-white items-center">
+            
+            <lottie-player src="../src/images/data.json" background="Transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop  autoplay></lottie-player>
+            <span class="text-center font-bold text-[#51a63d]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cum enim minus illum fugiat reiciendis modi, laborum quis!</span>
+          </div>
+          <div class="rounded-xl shadow-xl bg-slate-100 border flex flex-col text-white  items-center">
+            <lottie-player src="../src/images/data1.json" background="Transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop  autoplay></lottie-player>
+
+            <span class="text-center font-bold text-[#51a63d]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cum enim minus illum fugiat reiciendis modi, laborum quis!</span>
+          </div>
+          <div class="rounded-xl shadow-xl bg-slate-100 border flex flex-col text-white  items-center">
+            <lottie-player src="../src/images/data2.json" background="Transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop  autoplay></lottie-player>
+
+            <span class="text-center font-bold text-[#51a63d]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cum enim minus illum fugiat reiciendis modi, laborum quis!</span>
+          </div>
+        </div>
+    </div>
 
 
-  <section id="section2" class="h-screen bg-[#ffffff]">
-    <h1 class="text-green-600 text-4xl text-center pt-20 btn">Section 2</h1>
-    <a href="#" class="cursor-pointer">cursor-pointer</a>
+
   </section>
 
-  <section id="section3" class="h-screen bg-blue-500">
+  <section id="section3" class=" bg-blue-500">
     <h1 class="text-white text-4xl text-center pt-20">Section 3</h1>
   </section>
-  <section id="section4" class="h-screen bg-red-200">
+  <section id="section4" class=" bg-red-200">
     <h1 class="text-white text-4xl text-center pt-20">Section 3</h1>
   </section>
-  <section id="section5" class="h-screen bg-purple-500">
+  <section id="section5" class=" bg-purple-500">
     <h1 class="text-white text-4xl text-center pt-20">Section 3</h1>
   </section>
 
 
   <script src="../src/script.js">
   </script>
+
 </body>
 </html>

@@ -10,6 +10,9 @@
 body {
     font-family: 'REM', sans-serif;
 }
-.btn{
-    cursor: pointer;
-}
+.title {
+    background-image: linear-gradient(to bottom, gray, #000);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
