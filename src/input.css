@@ -17,7 +17,7 @@ body {
     -webkit-background-clip: text;
   }
   .addsticky{
-    padding:15px 0;
+    padding:10px 0;
     background: #12a85c !important; 
     z-index: 100;
     filter: brightness(1.1);

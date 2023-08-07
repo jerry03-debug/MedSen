@@ -16,20 +16,23 @@ const smoothScroll = (target) => {
 
   document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.querySelector('.navbar');
-  
+    var logo = document.querySelector('.logo');
     window.addEventListener("scroll", function() {
       if (window.scrollY > 20) {
         navbar.classList.add("addsticky");
         navbar.classList.add("shadow-xl");
+        logo.src ="../src/images/white-logo.png"
+
       } else {
         navbar.classList.remove("addsticky");
         navbar.classList.remove("shadow-xl");
+        logo.src ="../src/images/logo.png"
 
 
       }
     });
   });
-  
+
   let defaultTransform = 0;
 function goNext() {
     defaultTransform = defaultTransform - 398;
@@ -45,3 +48,21 @@ function goPrev() {
     slider.style.transform = "translateX(" + defaultTransform + "px)";
 }
 prev.addEventListener("click", goPrev);
+
+
+const backToTopButton = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.remove('hidden');
+    } else {
+      backToTopButton.classList.add('hidden');
+    }
+  });
+
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
