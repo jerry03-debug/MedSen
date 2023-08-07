@@ -8,31 +8,31 @@
   <title>Medsen</title>
 </head>
 <body>
-  <nav class="sticky top-0 z-30 left-0 w-full bg-gray-800 p-4 flex items-center justify-between">
+  <nav class="fixed navbar top-0 z-50 left-0 w-full p-4 flex items-center justify-between">
     <span class="text-white bg-green-500 ml-4 p-1 ">MEDSEN</span>
     <ul class="flex mr-12  justify-end">
       <li class="mr-6">
     
-        <a href="#section1" class="text-white">Accueil</a>
+        <a href="#section1" class="hover:text-black text-gray-900">Accueil</a>
       </li>
       <li class="mr-6">
-        <a href="#section2" class="text-white">Notre Vision</a>
+        <a href="#section2" class="hover:text-black text-gray-900">Notre Vision</a>
       </li>
       <li class="mr-6">
-        <a href="#section3" class="text-white ">Nos projets</a>
+        <a href="#section3" class="hover:text-black text-gray-900 ">Nos projets</a>
       </li>
       <li class="mr-6">
-        <a href="#section4" class="text-white ">Actualités</a>
+        <a href="#section4" class="hover:text-black text-gray-900 ">Actualités</a>
       </li>
       <li class="mr-6">
-        <a href="#section5" class="text-white ">Nous rejoindre</a>
+        <a href="#section5" class="hover:text-black text-gray-900 ">Nous rejoindre</a>
       </li>
     </ul>
   </nav>
   <!-- Hero Section -->
-  <section id="section1" class="relative h-screen bg-[url('../src/images/bg-drugs2.jpg')] bg-center bg-cover flex items-center ">
+  <section id="section1" class="relative h-[100vh] bg-[url('../src/images/bg-drugs2.jpg')] bg-center bg-cover flex items-center ">
     <div class="flex cursor-pointer flex-col gap-3 ml-8 z-20">
-      <h1 class="text-4xl font-bold text-gray-900  ">TROUVER VOTRE DOCTEUR, PRENEZ RENDEZ-VOUS</h1>
+      <h1 class="text-4xl font-bold text-gray-900  ">TROUVEZ VOTRE DOCTEUR,<br> PRENEZ RENDEZ-VOUS</h1>
       <h1 class=" text-xl text-gray-900 ">Près de chez vous, partout au Sénégal ! </h2>
         
         <a class="p-2  bg-green-600 flex justify-between text-white rounded-xl shadow-xl w-[13rem] text-center hover:bg-transparent hover:text-green-600 hover:border-green-600 hover:border hover:scale-95 transition-all duration-200 items-center ">
@@ -43,7 +43,6 @@
 
     </div>
     <div class="absolute top-0 right-0 w-full h-full transform rotate-180 z-0">
-      <!-- Remplacez l'ancien SVG par le nouveau SVG ici -->
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" >
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" fill="#ffffff" fill-opacity="1"></path>
       </svg>
@@ -66,8 +65,7 @@
             Notre objectif principal est de mettre en place un système de santé connecté pour le Sénégal. Nous sommes une healthtech africaine qui propose une nouvelle façon d'accéder aux soins médicaux plus rapide, pratique et abordable. <br>
             <span class="text-[#51a63d] font-semibold text-2xl">MedSen</span> propose une plateforme nationale e-santé qui regroupe les établissements sanitaires, la population et les partenaires de santé.
           </p> 
-       
-
+  
         
         </div>  
         <div class="w-full py-10 px-10  items-center   grid grid-cols-3 gap-4">
@@ -88,13 +86,48 @@
           </div>
         </div>
     </div>
-
-
-
   </section>
+<!-- Nos projets -->
+  <section id="section3" class=" bg-slate-100 flex flex-col items-center gap-12 py-4 ">
+    <h1 class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+      Nos projets
+      <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
+    </h1>
+    <p class="text-xl w-1/2 text-center"><span class="text-[#51a63d] text-xl font-bold "> MedSen</span> veut jouer un rôle majeur dans la santé publique au Sénégal et étend désormais ses services afin de bâtir pour le Sénégal.</p>
 
-  <section id="section3" class=" bg-blue-500">
-    <h1 class="text-white text-4xl text-center pt-20">Section 3</h1>
+    <div class="flex  w-full max-h-full items-center justify-center gap-6 ">
+        <div class="h-full bg-green-900 w-1/4 rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center justify-center gap-6 text-white">
+          <h1 class="font-bold text-3xl    border-b-4 pb-4 ">Accompagnement des IME</h1>
+          <p class="text-justify ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis sint culpa quisquam commodi impedit corporis saepe necessitatibus repudiandae, provident id delectus doloribus libero consequatur architecto et cum dolorem cumque.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, at blanditiis laboriosam, recusandae suscipit nemo odit id, explicabo omnis eaque adipisci. Est voluptate cumque nobis magni odit porro veniam tempora.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt sequi consectetur, mollitia ullam voluptas corrupti iste veniam nobis ipsum in vero autem voluptate odit minus? Placeat similique beatae hic?
+          </p>
+            <a href="#" class="border-2  px-12 py-2 rounded-full text-bold hover:bg-white hover:text-green-700   transition-all "> Voir plus</a>
+        </div>
+        <div class="h-full bg-green-900 w-1/4 rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300 p-8 flex flex-col items-center justify-center gap-6 text-white">
+          <h1 class="font-bold text-3xl    border-b-4 pb-4 ">Aide à la decision</h1>
+          <p class="text-justify ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis sint culpa quisquam commodi impedit corporis saepe necessitatibus repudiandae, provident id delectus doloribus libero consequatur architecto et cum dolorem cumque.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, at blanditiis laboriosam, recusandae suscipit nemo odit id, explicabo omnis eaque adipisci. Est voluptate cumque nobis magni odit porro veniam tempora.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt sequi consectetur, mollitia ullam voluptas corrupti iste veniam nobis ipsum in vero autem voluptate odit minus? Placeat similique beatae hic?
+          </p>
+          <a href="#" class="border-2  px-12 py-2 rounded-full text-bold hover:bg-white hover:text-green-700   transition-all "> Voir plus</a>
+
+        </div>
+        <div class="h-full bg-green-900 w-1/4 rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300 p-8 flex flex-col items-center justify-center gap-6 text-white">
+          <h1 class="font-bold text-3xl  h-26 border-b-4 pb-4 ">Établissements sanitaires</h1>
+          <p class="text-justify ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis sint culpa quisquam commodi impedit corporis saepe necessitatibus repudiandae, provident id delectus doloribus libero consequatur architecto et cum dolorem cumque.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, at blanditiis laboriosam, recusandae suscipit nemo odit id, explicabo omnis eaque adipisci. Est voluptate cumque nobis magni odit porro veniam tempora.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt sequi consectetur, mollitia ullam voluptas corrupti iste veniam nobis ipsum in vero autem voluptate odit minus? Placeat similique beatae hic?
+          </p>
+          <a href="#" class="border-2  px-12 py-2 rounded-full text-bold hover:bg-white hover:text-green-700   transition-all "> Voir plus</a>
+
+        </div>
+    </div>
+    <a href="#" class="border-2 text-white text-xl font-semibold px-16 py-2 bg-green-800 rounded-full text-bold hover:bg-green-900  transition-all "> Découvrir tous nos projets</a>
+
   </section>
   <section id="section4" class=" bg-red-200">
     <h1 class="text-white text-4xl text-center pt-20">Section 3</h1>

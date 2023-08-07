@@ -16,3 +16,17 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
   }
+  .addsticky{
+    padding:15px 0;
+    background: #12a85c !important; 
+    z-index: 100;
+    filter: brightness(1.1);
+    transition:all 0.5s
+}
+.navbar.addsticky ul li a {
+    color:white
+}
+.navbar.addsticky ul li a:hover{
+    color:black;
+    transition: all .3s
+}

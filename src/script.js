@@ -13,3 +13,20 @@ const smoothScroll = (target) => {
       smoothScroll(target);
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var navbar = document.querySelector('.navbar');
+  
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 20) {
+        navbar.classList.add("addsticky");
+        navbar.classList.add("shadow-xl");
+      } else {
+        navbar.classList.remove("addsticky");
+        navbar.classList.remove("shadow-xl");
+
+
+      }
+    });
+  });
+  
