@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+ 
   <title>MedSen</title>
 </head>
 <body>
@@ -86,11 +87,11 @@
   
   <!-- Hero Section -->
   <section id="section1" class="relative h-[100vh] bg-[url('../src/images/bg-drugs2.jpg')] bg-center bg-cover flex items-center max-w-full ">
-    <div class="flex cursor-pointer flex-col gap-3 ml-8 z-20">
+    <div class="flex  flex-col gap-3 ml-8 z-20" data-aos="zoom-in-right" data-aos-duration="1500">
       <h1 class="text-xl sm:text-4xl font-bold text-gray-900  ">TROUVEZ VOTRE DOCTEUR,<br> PRENEZ RENDEZ-VOUS</h1>
       <h1 class=" text-lg sm:text-xl text-gray-900 ">Près de chez vous, partout au Sénégal ! </h2>
         
-        <a class="p-2  bg-green-600 flex justify-between text-white rounded-xl shadow-xl w-[13rem] text-center hover:bg-transparent hover:text-green-600 hover:border-green-600 hover:border hover:scale-95 transition-all duration-200 items-center ">
+        <a class="p-2 cursor-pointer  bg-green-600 flex justify-between text-white rounded-xl shadow-xl w-[13rem] text-center hover:bg-transparent hover:text-green-600 hover:border-green-600 hover:border hover:scale-95 transition-all duration-200 items-center ">
           CONTACTER NOUS
           <img src="../src/images/whatsapp.ico" alt="WhatsApp" width="30" height="30">
         </a>
@@ -108,7 +109,7 @@
 <!-- Qui sommes nous ? -->
 
   <section id="section2" class=" bg-[#ffffff] flex flex-col items-center gap-12">
-    <h1 class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+    <h1 data-aos="fade-left" data-aos-duration="1500" class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
       Qui sommes nous ?
       <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
     </h1>
@@ -149,7 +150,7 @@
 
 <!-- Nos projets -->
   <section id="section3" class=" bg-slate-100 flex flex-col items-center gap-12 py-6 ">
-    <h1 class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+    <h1 data-aos="zoom-in-right" data-aos-duration="1500" class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
       Nos projets
       <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
     </h1>
@@ -157,7 +158,7 @@
 
     <div class="flex flex-col sm:flex-row w-full max-h-full items-center justify-center gap-6 ">
 
-        <div class="sm:h-[50rem] sm:w-1/4 h-[30rem] overflow-hidden w-[90%] relative bg-[url('../src/images/bg-project.jpg')] bg-center bg-cover  rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center  gap-6 text-white ">
+        <div class="sm:h-[50rem] sm:w-1/4 h-[30rem] overflow-hidden w-[90%] relative bg-[url('../src/images/bg-project.jpg')] bg-center bg-cover  rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center  gap-6 text-white " data-aos="fade-right" data-aos-duration="1500">
           
           <div class="absolute inset-0 opacity-90  bg-green-900 rounded-md "></div>
           <h1 class="uppercase font-bold text-lg sm:text-3xl border-b-4 pb-4 z-10 px-2 text-center">Accompagnement des IME </h1>
@@ -168,7 +169,7 @@
           </p>
             <a href="./projects.html#section1" class="border-2 z-10 px-12 py-2 rounded-full text-bold hover:bg-white hover:text-green-700 absolute bottom-4 transition-all "> Voir plus</a>
         </div>
-        <div class="sm:h-[50rem] sm:w-1/4 h-[30rem] overflow-hidden w-[90%] relative bg-[url('../src/images/bg-project2.jpg')] bg-center bg-cover  rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center  gap-6 text-white ">
+        <div class="sm:h-[50rem] sm:w-1/4 h-[30rem] overflow-hidden w-[90%] relative bg-[url('../src/images/bg-project2.jpg')] bg-center bg-cover  rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center  gap-6 text-white " data-aos="fade-zoom-in" data-aos-duration="1500">
           
           <div class="absolute inset-0 opacity-90  bg-green-900 rounded-md "></div>
           <h1 class="uppercase font-bold text-lg sm:text-3xl border-b-4 pb-4 z-10 px-2 text-center">Aide à la Décision </h1>
@@ -179,7 +180,7 @@
           </p>
             <a href="./projects.html#section2" class="border-2 z-10 px-12 py-2 rounded-full text-bold hover:bg-white hover:text-green-700 absolute bottom-4 transition-all "> Voir plus</a>
         </div>
-        <div class="sm:h-[50rem] sm:w-1/4 h-[30rem] overflow-hidden w-[90%] relative bg-[url('../src/images/bg-project3.jpg')] bg-center bg-cover  rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center  gap-6 text-white ">
+        <div class="sm:h-[50rem] sm:w-1/4 h-[30rem] overflow-hidden w-[90%] relative bg-[url('../src/images/bg-project3.jpg')] bg-center bg-cover  rounded-md shadow-lg  hover:-translate-y-4 hover:shadow-2xl transition-all duration-300   p-8 flex flex-col items-center  gap-6 text-white " data-aos="fade-left" data-aos-duration="1500">
           
           <div class="absolute inset-0 opacity-90  bg-green-900 rounded-md "></div>
           <h1 class="uppercase font-bold text-lg sm:text-3xl border-b-4 pb-4 z-10 px-2 text-center">Sécurité des données</h1>
@@ -198,14 +199,16 @@
 
  <!-- Actualités  -->
   <section id="section4" class=" bg-gray-300 flex flex-col items-center py-8 ">
-    <h1 class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+    <h1 data-aos="zoom-in-right" data-aos-duration="1500" class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
       Les Actualités
       <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
     </h1>
 
     
     <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-      <div class="w-full relative flex items-center justify-center">
+      <div class="w-full relative flex items-center justify-center" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1800">
           <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
               <svg class="text-white" width="25" height="25" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -323,7 +326,7 @@
       </p>
     </div>
   
-    <div class="w-[90%] sm:w-[70%]  bg-slate-200 p-4 rounded-lg shadow-md">
+    <div class="w-[90%] sm:w-[70%]  bg-slate-200 p-4 rounded-lg shadow-md" data-aos="zoom-in" data-aos-duration="1500" >
       <h2 class="text-2xl font-semibold mb-6 text-center">Contactez-nous</h2>
       <div class="flex flex-col sm:flex-row  sm:gap-6">
         <div class="flex sm:flex-col justify-evenly items-center gap-8">
@@ -369,7 +372,9 @@
   </button>
 
 
-  <script src="../src/script.js">
+  <script src="../src/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
   </script>
 
 </body>

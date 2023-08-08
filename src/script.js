@@ -1,3 +1,5 @@
+
+
 const smoothScroll = (target) => {
     const element = document.querySelector(target);
     window.scrollTo({
