@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <title>MedSen</title>
+</head>
+<body>
+  <!-- Navbar && sidebar -->
+  <nav class="fixed navbar top-0 z-40 left-0 w-full p-2 flex items-center justify-between">
+    <img src="../src/images/logo.png" alt="MedSen" width="120" height="100" class="logo">
+		<div class="md:hidden">
+			<button class="navbar-burger flex hover:scale-105 transition-all items-center text-black p-3">
+				<svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Mobile menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+		</div>
+		<ul class="hidden mr-12 justify-end md:flex gap-2 lg:gap-3 md:items-center ">
+			<li><a class="text-md text-gray-800 hover:text-black" href="index.html#section1">Accueil</a></li>
+			<li class="text-black ">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-md text-gray-800 hover:text-black " href="index.html#section2">Notre vision</a></li>
+			<li class="text-black">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-md text-gray-800 hover:text-black" href="index.html#section3">Nos projets</a></li>
+			<li class="text-black">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-md text-gray-800 hover:text-black" href="index.html#section4">Actualités</a></li>
+			<li class="text-black">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-md text-gray-800 hover:text-black" href="index.html#section5">Nous rejoindre</a></li>
+		</ul>
+		
+	</nav>
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+			<div class="flex items-center mb-8">
+        <img src="../src/images/logo.png" alt="MedSen" width="150" height="100" class="logo mr-auto">
+				
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html">Accueil</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section2">Notre Vision</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section3">Nos projets</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section4">Actualités</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section5">Nous rejoindre</a>
+					</li>
+				</ul>
+			</div>
+			
+		</nav>
+	</div>
+  
+  <!-- Hero Section -->
+  <section  class="relative h-[70vh] bg-[url('../src/images/projects.jpg')] bg-center bg-cover flex flex-col justify-center items-center gap-3 ">
+    <div class="inset-0 absolute bg-black opacity-10"></div>
+    <h1 class=" uppercase text-5xl z-10 ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+        Nos projets
+        <span class="h-[5px] w-16 rounded bg-[#51a63d] mx-auto"></span>
+    </h1>
+    <p class="w-2/3 text-xl z-20 text-center font-bold text-green-700 ">Nos projets tournent autour de Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores delectus praesentium voluptatibus minus reprehenderit, voluptate nesciunt veniam qui minima aliquid nemo deserunt molestiae animi voluptatem consectetur, eius tempore! Maiores?</p>
+  </section>
+  <!-- //Liste de projets -->
+  <section id="section2" class=" bg-gray-200 flex flex-col items-center gap-12 pt-6">
+    <div id="section1" class="flex flex-col gap-6 items-center justify-center">
+        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+          Accompagnement des IME
+            <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
+        </h1>
+        <p class="w-2/3 text-xl text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        </p>
+        <div class="relative w-full">
+            <img src="../src/images/bg-project.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+        </div>
+    </div>
+
+    <div id="section2" class="flex flex-col gap-6 items-center justify-center">
+        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+         Aide à la decision
+            <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
+        </h1>
+        <p class="w-2/3 text-xl text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        </p>
+        <img src="../src/images/bg-project2.jpg" alt="projet 1" height="300" class=" w-full h-[40rem] object-cover shadow-inner ">
+    </div>
+
+
+    <div id="section3" class="flex flex-col gap-6 items-center justify-center">
+        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+          Sécurité des données
+            <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
+        </h1>
+        <p class="w-2/3 text-xl text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        </p>
+        <img src="../src/images/bg-project3.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+    </div>
+
+
+
+    
+  </section>
+
+  
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-white py-8 text-left">
+    <p class="ml-8">&copy; 2023 MedSen. Designed and Developed by MedSen</p>
+  </footer>
+  
+  <button id="backToTop" class="fixed bottom-4 right-4 z-50 bg-green-700 text-white shadow-green-800 shadow-lg w-12 h-12 rounded-[50%] hover:bg-white hover:text-green-700 hover:border-green-600 hover:border transition-all focus:outline-none focus:ring-2 focus:ring-green-300 hidden text-2xl" >
+   &uArr;
+  </button>
+
+
+  <script src="../src/script.js">
+  </script>
+
+</body>
+</html>

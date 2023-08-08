@@ -19,7 +19,7 @@ body {
   .addsticky{
     padding:10px 0;
     background: #12a85c !important; 
-    z-index: 100;
+    z-index: 40;
     filter: brightness(1.1);
     transition:all 0.5s
 }
