@@ -46,7 +46,13 @@
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a class="text-md text-gray-800 hover:text-black" href="#section5">Nous rejoindre</a></li>
+      <li><a class="text-md text-gray-800 hover:text-black" href="#section5">Témoignages</a></li>
+			<li class="text-black">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-md text-gray-800 hover:text-black" href="#section6">Nous rejoindre</a></li>
 		</ul>
 		
 	</nav>
@@ -76,8 +82,11 @@
 					<li class="mb-1">
 						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#section4">Actualités</a>
 					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#section5">Témoignages</a>
+					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#section5">Nous rejoindre</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#section6">Nous rejoindre</a>
 					</li>
 				</ul>
 			</div>
@@ -108,43 +117,33 @@
   
 <!-- Qui sommes nous ? -->
 
-  <section id="section2" class=" bg-[#ffffff] flex flex-col items-center gap-12">
+  <section id="section2" class=" bg-[#ffffff] flex flex-col items-center gap-12 py-4">
     <h1 data-aos="fade-right" data-aos-duration="1500" class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
-      Qui sommes nous ?
+      Notre vision
       <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
     </h1>
-    <div class="flex flex-col items-center ">
+    <div class="flex flex-col items-center gap-6 ">
         <p class=" text-xl sm:text-3xl font-bold text-[#51a63d] animate-pulse text-center">MedSen, une healthtech africaine</p>      
-        
-        <div class="flex justify-evenly gap-4 mt-4 items-center">
-          <p class="text-justify w-[80%] px-5 py-5 shadow-md  bg-gray-200 rounded text-xl">
+
+      <div class="grid grid-cols-2 gap-8 pt-4 pb-4  w-[90%]">
+        <img src="../src/images/aboutus.jpg" alt="About us" class="rounded shadow-xl">
+
+        <div class="flex flex-col gap-3">
+          <h1 class="text-3xl text-center font-bold">Lorem ipsum dolor sit amet consectetur</h1>
+          <div class="flex bg-gray-200 items-center justify-evenly p-3 rounded">
+            <button class="p-2 rounded  bg-green-600">Qui sommes nous ?</button>
+            <button class="p-2 rounded  hover:text-green-600 bg-white">Notre vision</button>
+            <button class="p-2 rounded hover:text-green-600 bg-white">Notre Histoire</button>
+          </div>
+          <div class="bg-gray-100 p-4 text-justify text-gray-800">
             Notre objectif principal est de mettre en place un système de santé connecté pour le Sénégal. Nous sommes une healthtech africaine qui propose une nouvelle façon d'accéder aux soins médicaux plus rapide, pratique et abordable. <br>
-            <span class="text-[#51a63d] font-semibold text-2xl">MedSen</span> propose une plateforme nationale e-santé qui regroupe les établissements sanitaires, la population et les partenaires de santé.
-          </p> 
-  
-        
-        </div>  
-        <div class="w-full py-10 px-10  items-center  grid sm:grid-cols-3 gap-4">
-          <div class="rounded-xl shadow-xl bg-slate-100 border flex flex-col text-white items-center">
-            
-            <lottie-player src="../src/images/data.json" background="Transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop  autoplay></lottie-player>
-            <span class="text-center font-bold text-[#51a63d]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cum enim minus illum fugiat reiciendis modi, laborum quis!</span>
-          </div>
-          <div class="rounded-xl shadow-xl bg-slate-100 border flex flex-col text-white  items-center">
-            <lottie-player src="../src/images/data1.json" background="Transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop  autoplay></lottie-player>
-
-            <span class="text-center font-bold text-[#51a63d]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cum enim minus illum fugiat reiciendis modi, laborum quis!</span>
-          </div>
-          <div class="rounded-xl shadow-xl bg-slate-100 border flex flex-col text-white  items-center">
-            <lottie-player src="../src/images/data2.json" background="Transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop  autoplay></lottie-player>
-
-            <span class="text-center font-bold text-[#51a63d]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cum enim minus illum fugiat reiciendis modi, laborum quis!</span>
+           <span class="text-[#51a63d] font-semibold text-2xl">MedSen</span> propose une plateforme nationale e-santé qui regroupe les établissements sanitaires, la population et les partenaires de santé.
           </div>
         </div>
+      </div>
+      
     </div>
   </section>
-
-
 
 
 
@@ -215,7 +214,7 @@
               </svg>
           </button>
           <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-              <div id="slider" class="h-full flex lg:gap-8 md:gap-6  items-center justify-start transition ease-out duration-700 ">
+              <div id="slider" class=" h-full flex lg:gap-8 md:gap-6  items-center justify-start transition ease-out duration-700 ">
                 
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img src="../src/images/bg-drugs.jpg" alt="sitting area" class="w-full h-[26rem] object-cover object-center mb-4" />
@@ -311,9 +310,110 @@
     <a href="./actualités.html" class="border-2 text-white text-xl font-semibold px-16 py-2 bg-green-800 rounded-full text-bold hover:bg-green-900  transition-all "> Suivre les nouveautés</a>
   </section>
 
+
+<!-- Temoignages -->
+<section id="section5" class=" bg-gray-300 flex flex-col items-center py-8 ">
+  <h1 data-aos="zoom-in-right" data-aos-duration="1500" class=" text-4xl self-start ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+   Témoignages
+    <span class="h-[3px] w-14 rounded bg-[#51a63d]"></span>
+  </h1>
+
+  
+  <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+    <div class="w-full relative flex items-center justify-center" data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1800">
+        <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev2">
+            <svg class="text-white" width="25" height="25" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1L1 7L7 13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+            <div id="slider2" class=" h-full flex lg:gap-8 md:gap-6  items-center justify-start transition ease-out duration-700 ">
+              
+                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                    <img src="../src/images/testimonial.jpg" alt="sitting area" class="w-[32rem] h-[26rem] object-cover object-center mb-4 rounded-lg" />
+                    <div class="  bg-opacity-30 absolute mt-4 w-full h-full flex flex-col items-center justify-center p-6 gap-12">
+                        <p class="text-gray-800 font-semibold text-center ">
+                          <span class="text-4xl text-green-800">"</span> Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat non dolorum ipsum id corrupti, harum incidunt est veniam. Inventore deleniti, consequuntur adipisci quaerat voluptates laudantium. Incidunt rem mollitia repellendus. adipiscing elit. Sed sed nisi quis mauris scelerisque bibendum.<span class="text-4xl text-green-800">"</span>
+                        </p>
+                        <h2 class="self-start my-8">
+                          Dr Lamine Ndiaye
+                          <span class="text-sm block text-gray-700">Biologiste</span>
+
+                        </h2>
+                      
+            
+                    </div>
+                </div>
+                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                  <img src="../src/images/testimonial.jpg" alt="sitting area" class="w-[32rem] h-[26rem] object-cover object-center mb-4 rounded-lg" />
+                  <div class="  bg-opacity-30 absolute mt-4 w-full h-full flex flex-col items-center justify-center p-6 gap-12">
+                      <p class="text-gray-800 font-semibold text-center ">
+                        <span class="text-4xl text-green-800">"</span> Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat non dolorum ipsum id corrupti, harum incidunt est veniam. Inventore deleniti, consequuntur adipisci quaerat voluptates laudantium. Incidunt rem mollitia repellendus. adipiscing elit. Sed sed nisi quis mauris scelerisque bibendum.<span class="text-4xl text-green-800">"</span>
+                      </p>
+                      <h2 class="self-start my-8">
+                        Dr Lamine Ndiaye
+                        <span class="text-sm block text-gray-700">Biologiste</span>
+
+                      </h2>
+                    
+          
+                  </div>
+              </div>
+              <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                <img src="../src/images/testimonial.jpg" alt="sitting area" class="w-[32rem] h-[26rem] object-cover object-center mb-4 rounded-lg" />
+                <div class="  bg-opacity-30 absolute mt-4 w-full h-full flex flex-col items-center justify-center p-6 gap-12">
+                    <p class="text-gray-800 font-semibold text-center ">
+                      <span class="text-4xl text-green-800">"</span> Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat non dolorum ipsum id corrupti, harum incidunt est veniam. Inventore deleniti, consequuntur adipisci quaerat voluptates laudantium. Incidunt rem mollitia repellendus. adipiscing elit. Sed sed nisi quis mauris scelerisque bibendum.<span class="text-4xl text-green-800">"</span>
+                    </p>
+                    <h2 class="self-start my-8">
+                      Dr Lamine Ndiaye
+                      <span class="text-sm block text-gray-700">Biologiste</span>
+
+                    </h2>
+                  
+        
+                </div>
+            </div>
+            <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+              <img src="../src/images/testimonial.jpg" alt="sitting area" class="w-[32rem] h-[26rem] object-cover object-center mb-4 rounded-lg" />
+              <div class="  bg-opacity-30 absolute mt-4 w-full h-full flex flex-col items-center justify-center p-6 gap-12">
+                  <p class="text-gray-800 font-semibold text-center ">
+                    <span class="text-4xl text-green-800">"</span> Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fugiat non dolorum ipsum id corrupti, harum incidunt est veniam. Inventore deleniti, consequuntur adipisci quaerat voluptates laudantium. Incidunt rem mollitia repellendus. adipiscing elit. Sed sed nisi quis mauris scelerisque bibendum.<span class="text-4xl text-green-800">"</span>
+                  </p>
+                  <h2 class="self-start my-8">
+                    Dr Lamine Ndiaye
+                    <span class="text-sm block text-gray-700">Biologiste</span>
+
+                  </h2>
+                
+      
+              </div>
+          </div>
+          
+              
+            </div>
+        </div>
+        <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next2">
+            <svg class="text-white" width="25" height="25" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+  </div>
+  <div class="dots_container" id="indicator"></div>
+  
+</section>
+
+
+
+
+
+
   <!-- Rejoignez nous -->
 
-  <section id="section5" class=" relative  flex flex-col items-center gap-8 py-6 bg-[url('../src/images/teamwork.jpg')] bg-center bg-cover ">
+  <section id="section6" class=" relative  flex flex-col items-center gap-8 py-6 bg-[url('../src/images/teamwork.jpg')] bg-center bg-cover ">
 
     <h1 class="text-4xl self-start z-20 ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
       Rejoignez Nous
@@ -375,7 +475,7 @@
   <script src="../src/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
-  </script>
+  
 
 </body>
 </html>

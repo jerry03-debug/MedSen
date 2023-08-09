@@ -45,6 +45,12 @@
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
+			<li><a class="text-md text-gray-800 hover:text-black" href="index.html#section5">Témoignages</a></li>
+			<li class="text-black">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
 			<li><a class="text-md text-gray-800 hover:text-black" href="index.html#section5">Nous rejoindre</a></li>
 		</ul>
 		
@@ -53,7 +59,7 @@
 		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
 		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
-        <img src="../src/images/journauxbg.jpg" alt="MedSen" width="150" height="100" class="logo mr-auto">
+        <img src="../src/images/logo.png" alt="MedSen" width="150" height="100" class="logo mr-auto">
 				
 				<button class="navbar-close">
 					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,7 +82,10 @@
 						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section4">Actualités</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section5">Nous rejoindre</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section5">Témoignages</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="./index.html#section6">Nous rejoindre</a>
 					</li>
 				</ul>
 			</div>
@@ -87,84 +96,116 @@
   <!-- Hero Section -->
   <section  class="relative h-[70vh] bg-[url('../src/images/projects.jpg')] bg-center bg-cover flex flex-col justify-center items-center gap-3 ">
     <div class="inset-0 absolute bg-black opacity-10"></div>
-    <h1 class=" uppercase text-5xl z-10 ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+    <h1 class=" uppercase text-5xl z-10  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
         Actualités
         <span class="h-[5px] w-16 rounded bg-[#51a63d] mx-auto"></span>
     </h1>
-    <p class="w-2/3 text-xl z-20 text-center font-bold text-green-700 ">Nos projets tournent autour de Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores delectus praesentium voluptatibus minus reprehenderit, voluptate nesciunt veniam qui minima aliquid nemo deserunt molestiae animi voluptatem consectetur, eius tempore! Maiores?</p>
+    <p class="w-[80%] text-xl z-20 text-center font-bold text-green-700 ">Nos projets tournent autour de Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores delectus praesentium voluptatibus minus reprehenderit, voluptate nesciunt veniam qui minima aliquid nemo deserunt molestiae animi voluptatem consectetur, eius tempore! Maiores?</p>
   </section>
-  <!-- //Liste de projets -->
-  <section id="section2" class=" bg-gray-200 flex flex-col items-center gap-12 pt-6">
-    <div id="section1" class="flex flex-col gap-6 items-center justify-center">
-        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+
+  <!-- Liste des actualités -->
+  <section id="section2" class=" bg-gray-200 grid grid-cols-1 sm:grid-cols-2 items-center gap-x-12 pt-6 pb-6 divide-green-600 divide-y-2">
+    <div id="section1" class="flex  flex-col gap-6 items-center justify-center">
+        <h1 class=" text-4xl  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
           Actualité 1
             <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
         </h1>
-        <p class="w-2/3 text-xl text-center">
+        <p class="w-2/3 text-xl text-justify">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, aut! Quidem repudiandae voluptatum cum quod, culpa aspernatur! Voluptate sequi ut consectetur sunt et fugit pariatur. Rerum minima voluptatum mollitia repellendus?
         </p>
-        <div class="relative w-full">
-            <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+        <div class="flex flex-col w-full gap-2">
+          <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-[90%] mx-auto h-[40rem] object-cover shadow-inner ">
+          <button class="voir-details border-2 z-10 px-12 bg-green-700 py-2 mx-auto rounded-full text-bold  hover:text-white transition-all">Voir les détails</button>
         </div>
     </div>
 
     <div id="section2" class="flex flex-col gap-6 items-center justify-center">
-        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+        <h1 class=" text-4xl  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
         Actualité 2
             <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
         </h1>
-        <p class="w-2/3 text-xl text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        <p class="w-2/3 text-xl text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, aut! Quidem repudiandae voluptatum cum quod, culpa aspernatur! Voluptate sequi ut consectetur sunt et fugit pariatur. Rerum minima voluptatum mollitia repellendus?
         </p>
-        <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class=" w-full h-[40rem] object-cover shadow-inner ">
+        <div class="flex flex-col w-full gap-2">
+          <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-[90%] mx-auto h-[40rem] object-cover shadow-inner ">
+          <button class="voir-details border-2 z-10 px-12 bg-green-700 py-2 mx-auto rounded-full text-bold  hover:text-white transition-all">Voir les détails</button>
+        </div>
     </div>
 
 
     <div id="section3" class="flex flex-col gap-6 items-center justify-center">
-        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+        <h1 class=" text-4xl  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
           Actualité 3
             <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
         </h1>
-        <p class="w-2/3 text-xl text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        <p class="w-2/3 text-xl text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, aut! Quidem repudiandae voluptatum cum quod, culpa aspernatur! Voluptate sequi ut consectetur sunt et fugit pariatur. Rerum minima voluptatum mollitia repellendus?
         </p>
-        <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+        <div class="flex flex-col w-full gap-2">
+          <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-[90%] mx-auto h-[40rem] object-cover shadow-inner ">
+          <button class="voir-details border-2 z-10 px-12 bg-green-700 py-2 mx-auto rounded-full text-bold  hover:text-white transition-all">Voir les détails</button>
+        </div>
     </div>
 
     <div id="section4" class="flex flex-col gap-6 items-center justify-center">
-        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+        <h1 class=" text-4xl  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
           Actualité 4
             <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
         </h1>
-        <p class="w-2/3 text-xl text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        <p class="w-2/3 text-xl text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, aut! Quidem repudiandae voluptatum cum quod, culpa aspernatur! Voluptate sequi ut consectetur sunt et fugit pariatur. Rerum minima voluptatum mollitia repellendus?
         </p>
-        <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+        <div class="flex flex-col w-full gap-2">
+          <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-[90%] mx-auto h-[40rem] object-cover shadow-inner ">
+          <button class="voir-details border-2 z-10 px-12 bg-green-700 py-2 mx-auto rounded-full text-bold  hover:text-white transition-all">Voir les détails</button>
+        </div>
     </div>
     <div id="section5" class="flex flex-col gap-6 items-center justify-center">
-        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+        <h1 class=" text-4xl  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
           Actualité 5
             <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
         </h1>
-        <p class="w-2/3 text-xl text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        <p class="w-2/3 text-xl text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, aut! Quidem repudiandae voluptatum cum quod, culpa aspernatur! Voluptate sequi ut consectetur sunt et fugit pariatur. Rerum minima voluptatum mollitia repellendus?
         </p>
-        <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+        <div class="flex flex-col w-full gap-2">
+          <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-[90%] mx-auto h-[40rem] object-cover shadow-inner ">
+          <button class="voir-details border-2 z-10 px-12 bg-green-700 py-2 mx-auto rounded-full text-bold  hover:text-white transition-all">Voir les détails</button>
+        </div>
     </div>
     <div id="section6" class="flex flex-col gap-6 items-center justify-center">
-        <h1 class=" text-4xl ml-12 text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
+        <h1 class=" text-4xl  text-center pt-20 title font-bold flex flex-col gap-2 justify-center">
           Actualité 6
             <span class="h-[5px] w-16 mx-auto rounded bg-[#51a63d]"></span>
         </h1>
-        <p class="w-2/3 text-xl text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+        <p class="w-2/3 text-xl text-justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, explicabo ipsum aspernatur incidunt eaque voluptates placeat deleniti iste quidem modi provident numquam quod fugit laboriosam eum magni dolor dicta eos.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, aut! Quidem repudiandae voluptatum cum quod, culpa aspernatur! Voluptate sequi ut consectetur sunt et fugit pariatur. Rerum minima voluptatum mollitia repellendus?
         </p>
-        <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-full h-[40rem] object-cover shadow-inner ">
+        <div class="flex flex-col w-full gap-2">
+          <img src="../src/images/journaux.jpg" alt="projet 1" height="300" class="w-[90%] mx-auto h-[40rem] object-cover shadow-inner ">
+          <button class="voir-details border-2 z-10 px-12 bg-green-700 py-2 mx-auto rounded-full text-bold  hover:text-white transition-all">Voir les détails</button>
+        </div>
     </div>
 
 
     
   </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content overflow-auto">
+		<span class=" font-bold text-green-600 ">MedSen</span>
+        <span class="close text-5xl">&times;</span>
+        <h2 class="modal-title text-4xl font-bold text-green-700"></h2>
+        <p class="modal-text text-lg text-justify"></p>
+    </div>
+</div>
 
   
 
@@ -178,8 +219,7 @@
   </button>
 
 
-  <script src="../src/script.js">
-  </script>
+  <script src="../src/script.js"></script>
 
 </body>
 </html>
