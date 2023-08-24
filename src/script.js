@@ -137,7 +137,7 @@ function autoSlide3()
   setTimeout(autoSlide3, slideInterval3); // Appeler à nouveau la fonction après le délai spécifié
 }
 function goNext3() {
-    defaultTransform3 = defaultTransform3 - 398;
+    defaultTransform3 = defaultTransform3 - 198;
     var slider3 = document.getElementById("slider3");
     if (Math.abs(defaultTransform3) >= slider3.scrollWidth / 1.7) defaultTransform3 = 0;
     slider3.style.transform = "translateX(" + defaultTransform3 + "px)";
@@ -146,7 +146,7 @@ next3.addEventListener("click", goNext3);
 function goPrev3() {
     var slider3 = document.getElementById("slider3");
     if (Math.abs(defaultTransform3) === 0) defaultTransform3 = 0;
-    else defaultTransform3 = defaultTransform3 + 398;
+    else defaultTransform3 = defaultTransform3 + 198;
     slider3.style.transform = "translateX(" + defaultTransform3 + "px)";
 }
 prev3.addEventListener("click", goPrev3);
