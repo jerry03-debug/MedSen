@@ -124,6 +124,35 @@ const smoothScroll = (target) => {
 
       }
     });
+
+    // Carousel icones
+
+let defaultTransform3 = 0;
+const slideInterval3 = 4000; // Temps en millisecondes entre chaque diapositive
+const next3 = document.getElementById("next3");
+const prev3 = document.getElementById("prev3");
+function autoSlide3() 
+{
+  goNext3(); // Appeler la fonction pour aller à la diapositive suivante
+  setTimeout(autoSlide3, slideInterval3); // Appeler à nouveau la fonction après le délai spécifié
+}
+function goNext3() {
+    defaultTransform3 = defaultTransform3 - 398;
+    var slider3 = document.getElementById("slider3");
+    if (Math.abs(defaultTransform3) >= slider3.scrollWidth / 1.7) defaultTransform3 = 0;
+    slider3.style.transform = "translateX(" + defaultTransform3 + "px)";
+}
+next3.addEventListener("click", goNext3);
+function goPrev3() {
+    var slider3 = document.getElementById("slider3");
+    if (Math.abs(defaultTransform3) === 0) defaultTransform3 = 0;
+    else defaultTransform3 = defaultTransform3 + 398;
+    slider3.style.transform = "translateX(" + defaultTransform3 + "px)";
+}
+prev3.addEventListener("click", goPrev3);
+autoSlide3();
+
+
     
 
 
@@ -181,7 +210,6 @@ function goPrev2() {
 }
 prev2.addEventListener("click", goPrev2);
 autoSlide2();
-
 
 
 

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+
+    <title>Medsen</title>
+  </head>
+  <body>
+    <!-- Navbar && sidebar -->
+    <nav
+      class="fixed navbar top-0 z-40 left-0 w-full p-2 flex items-center justify-between"
+    >
+      <img
+        src="../src/images/logo.png"
+        alt="MedSen"
+        width="120"
+        height="100"
+        class="logo"
+      />
+      <div class="md:hidden">
+        <button
+          class="navbar-burger flex hover:scale-105 transition-all items-center text-black p-3"
+        >
+          <svg
+            class="block h-6 w-6 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        class="hidden mr-12 justify-end md:flex gap-2 lg:gap-3 md:items-center"
+      >
+        <li>
+          <a
+            class="text-md text-gray-800 hover:text-black"
+            href="index.html#section1"
+            >Accueil</a
+          >
+        </li>
+        <li class="text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-md text-gray-800 hover:text-black"
+            href="index.html#section2"
+            >Notre vision</a
+          >
+        </li>
+        <li class="text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-md text-gray-800 hover:text-black"
+            href="index.html#section3"
+            >Nos projets</a
+          >
+        </li>
+        <li class="text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-md text-gray-800 hover:text-black"
+            href="index.html#section4"
+            >Actualités</a
+          >
+        </li>
+        <li class="text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-md text-gray-800 hover:text-black"
+            href="index.html#section5"
+            >Témoignages</a
+          >
+        </li>
+        <li class="text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-md text-gray-800 hover:text-black"
+            href="index.html#section6"
+            >Nous rejoindre</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <img
+            src="../src/images/logo.png"
+            alt="MedSen"
+            width="150"
+            height="100"
+            class="logo mr-auto"
+          />
+
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="index.html#section1"
+                >Accueil</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="index.html#section2"
+                >Notre Vision</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="index.html#section3"
+                >Nos projets</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="index.html#section4"
+                >Actualités</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="index.html#section5"
+                >Témoignages</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="index.html#section6"
+                >Nous rejoindre</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section
+      id="section1"
+      class="relative h-[100vh] bg-[url('../src/images/rdv-bg.jpg')] bg-center bg-cover flex max-w-full flex-col items-center gap-24"
+    >
+        <div class="mx-auto px-6 mt-20 h-48  flex items-center justify-center relative">
+          <div class="relative rounded-full flex items-center">
+            <input
+              type="text"
+              class="py-2 px-4 pr-10 rounded-full rounded-r-none w-full focus:outline-none focus:border-none shadow-2xl"
+              placeholder="Rechercher"
+            />
+            <button class="absolute right-0 top-0 h-full p-2">
+              <svg
+                class="w-6 h-6 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-5.2-5.2M15 10a5 5 0 11-10 0 5 5 0 0110 0z"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Dropdown -->
+          <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          class="text-white  bg-green-600 hover:bg-green-700 focus:ring-1 focus:outline-none focus:ring-green-800 font-medium rounded-full rounded-l-none text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:hover:bg-green-600 dark:focus:ring-green-800"
+          type="button"
+        >
+          Chercher par médecin
+          <svg
+            class="w-2.5 h-2.5 ml-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownDefaultButton"
+          >
+          <li>
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >          Chercher par médecin
+              </a
+            >
+          </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >          Chercher par Établissement
+                </a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >          Chercher par position
+                </a
+              >
+            </li>
+         
+          </ul>
+        </div>
+
+        <div class="flex items-center absolute px-2 bg-white rounded-lg top-32 shadow-xl ">
+            <input type="checkbox" id="priseEnCharge" class="form-checkbox h-4 w-4 text-green-700 focus:outline-green-700">
+            <label for="priseEnCharge" class="ml-1 text-green-600 font-semibold">Avec prise(s) en charge</label>
+        </div>
+    </div>
+
+<!-- icons slider -->
+
+<div class="w-full relative flex items-center justify-center" data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1800">
+        <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev3">
+            <svg class="text-white" width="25" height="25" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1L1 7L7 13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="w-2/3 h-[full] mx-auto overflow-x-hidden overflow-y-hidden">
+            <div id="slider3" class=" h-full flex lg:gap-8 md:gap-6  items-center justify-start transition ease-out duration-700 ">
+              
+                <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-white p-2 rounded-2xl shadow-lg">
+                    <img src="../src/images/adn.png" alt="sitting area" class="w-[10rem]  object-cover object-center mb-4 rounded-lg" />
+                    <p class="absolute bottom-0 text-sm font-bold">Biologiste-Biochimiste</p>
+                </div>
+                <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-white p-2 rounded-2xl shadow-lg">
+                  <img src="../src/images/allergique.png" alt="sitting area" class="w-[10rem]  object-cover object-center mb-4 rounded-lg" />
+                  <p class="absolute bottom-0 text-sm font-bold ">Allergologue</p>
+
+                  
+              </div>
+              <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-white p-2 rounded-2xl shadow-lg">
+                <img src="../src/images/cardiologue.png" alt="sitting area" class="w-[10rem]  object-cover object-center mb-4 rounded-lg" />
+                <p class="absolute bottom-0 text-sm font-bold">Biologiste-Biochimiste</p>
+
+                
+            </div>
+            <div class="flex flex-shrink-0 relative w-full sm:w-auto bg-white p-2 rounded-2xl shadow-lg">
+              <img src="../src/images/dents.jpg" alt="sitting area" class="w-[10rem]  object-cover object-center mb-4 rounded-lg" />
+              <p class="absolute bottom-0 text-sm font-bold">Biologiste-Biochimiste</p>
+
+              
+          </div>
+          
+              
+            </div>
+        </div>
+        <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next3">
+            <svg class="text-white" width="25" height="25" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+
+
+
+
+
+
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../src/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+</html>
